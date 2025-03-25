@@ -28,7 +28,7 @@ https://youtu.be/-sLkMPXCdfg
 
 **Lưu ý**: Nếu ấn vào phát video chưa thấy video hiện thì quay lại trang chủ ấn lại nhé (Có thể do video chưa load xong).
 ##  File Structure
-
+```css
 ProTuber/
 │──ffmpeg
 │──yt-dlp.exe
@@ -67,7 +67,7 @@ ProTuber/
 │   │   │   │   │   ├── NoteView.fxml
 │   │   │   │   │   ├── VideoItemView.fxml
 │   │   │   │   │   ├── VideoPlayerView.fxml
-
+```
 ## Requirements
 
 Java: Version 17 or higher (this project uses Java 23).
@@ -79,6 +79,8 @@ Operating System: Windows, macOS, or Linux (tested on Windows).
 Cách cài đặt dự án
 
 ```bash
+- Tải ffmpeg tại https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z
+- Giải nén và đổi tên thư mục lại thành ffmpeg rồi để vào trong foler dự án(ProTuber)
 - Clone/Tải dự án về 
 - Chạy file .exe
 ```
