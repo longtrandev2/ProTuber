@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="videoTable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="688.0" prefWidth="1280.0" stylesheets="@../styles/NoteView.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="org.example.protuber.controller.NoteController">
+  <columns>
+    <TableColumn fx:id="sttColumn" prefWidth="58.39999467134476" styleClass="title-column" text="STT" />
+    <TableColumn fx:id="titleColumn" prefWidth="286.3999824523926" styleClass="title-column" text="Tiêu đề" />
+      <TableColumn fx:id="tagColumn" prefWidth="205.60006713867188" styleClass="title-column" text="Tag" />
+      <TableColumn fx:id="noteColumn" prefWidth="541.599853515625" styleClass="title-column" text="Ghi chú" />
+      <TableColumn fx:id="actionColumn" minWidth="7.199951171875" prefWidth="190.4000244140625" styleClass="title-column" text="Thao tác" />
+  </columns>
+</TableView>

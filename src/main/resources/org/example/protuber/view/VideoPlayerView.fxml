@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.Double?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane prefHeight="688.0" prefWidth="1280.0" stylesheets="@../styles/VideoPlayerView.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.protuber.controller.VideoPlayerController">
+   <children>
+      <HBox prefHeight="688.0" prefWidth="1280.0">
+         <children>
+            <VBox maxWidth="770.0" prefHeight="720.0" prefWidth="848.0">
+               <children>
+                  <!-- StackPane chứa MediaView hoặc WebView -->
+                  <StackPane fx:id="videoContainer" maxHeight="433.125" maxWidth="770.0" prefHeight="433.125" prefWidth="770.0">
+                     <children>
+                        <MediaView fx:id="mediaView" fitHeight="433.125" fitWidth="770.0" preserveRatio="false">
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport></MediaView>
+                        <Region fx:id="videoRegion" opacity="0.0" prefHeight="433.125" prefWidth="770.0" StackPane.alignment="CENTER" />
+
+                        <VBox fx:id="videoControls" alignment="BOTTOM_CENTER" maxHeight="75.0" maxWidth="848.0" minHeight="0.0" minWidth="0.0" prefHeight="75.0" prefWidth="782.0" spacing="8.0" style=" -fx-padding: 8; -fx-border-radius: 5;" StackPane.alignment="BOTTOM_CENTER">
+                           <Slider fx:id="progressBarVideo" maxWidth="Infinity" prefHeight="5.0" style="-fx-background-color: transparent;" />
+
+                           <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-padding: 5;">
+                              <StackPane>
+                                 <children>
+                                    <Button fx:id="playVideoPlayer" onAction="#togglePlayPause" prefHeight="30.0" prefWidth="41.0" style="-fx-font-size: 14px;" text="⏸" />
+                                    <Label />
+                                 </children>
+                              </StackPane>
+                              <Button fx:id="resetButton" onAction="#resetVideo" prefHeight="30.0" prefWidth="41.0" style="-fx-font-size: 14px;" text="⏪" />
+                              <Label fx:id="volumeButton" text="🔊" />
+                              <Slider fx:id="volumeSlider" blockIncrement="0.01" max="1.0" min="0.0" prefHeight="14.0" prefWidth="95.0" value="0.5" />
+                              <Label fx:id="currentTimeLabel" prefHeight="18.0" prefWidth="45.0" text="Time" />
+                              <Label text="/" textFill="WHITE" />
+                              <Label fx:id="totalTimeLabel" prefHeight="18.0" prefWidth="45.0" text="Label" />
+                              <Region prefHeight="30.0" prefWidth="282.0" />
+                              <ChoiceBox fx:id="speedBox" onAction="#changeSpeed">
+                                 <items>
+                                    <FXCollections fx:factory="observableArrayList">
+                                       <Double fx:value="0.5" />
+                                       <Double fx:value="1.0" />
+                                       <Double fx:value="1.5" />
+                                       <Double fx:value="2.0" />
+                                    </FXCollections>
+                                 </items>
+                              </ChoiceBox>
+                              <Button fx:id="fullscreenButton" onAction="#toggleFullscreen" text="⛶" />
+                           </HBox>
+                        </VBox>
+                     </children>
+                  </StackPane>
+
+                  <VBox prefHeight="70.0" prefWidth="770.0">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Region prefHeight="43.0" prefWidth="235.0" />
+                              <Label fx:id="titleLabel" prefHeight="18.0" prefWidth="850.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Tiêu đề video" />
+                                 <Button fx:id="editButtonTimeStamp" alignment="TOP_LEFT" onAction="#addDefaultTimestamp" prefHeight="27.0" prefWidth="347.0" style="-fx-background-color: lightgray;" text="Thêm timestamp" />
+                              <Region prefHeight="43.0" prefWidth="232.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="237.0" prefWidth="770.0">
+                     <children>
+                        <ScrollPane prefHeight="234.0" prefWidth="770.0">
+                           <content>
+                              <VBox fx:id="timestampContainer" prefHeight="237.0" prefWidth="770.0" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+
+            <StackPane fx:id="noteContainer" prefHeight="688.0" prefWidth="510.0">
+               <children>
+                  <ScrollPane>
+                     <StackPane.margin>
+                        <Insets />
+                     </StackPane.margin>
+                     <content>
+                        <TextArea fx:id="noteArea" prefHeight="688.0" prefWidth="510.0" promptText="Ghi chú của bạn..." wrapText="true" />
+                     </content>
+                  </ScrollPane>
+                  <Button fx:id="editButtonNote" onAction="#editNote" style="-fx-background-color: lightgray;" text="Sửa" StackPane.alignment="BOTTOM_RIGHT">
+                     <StackPane.margin>
+                        <Insets bottom="20.0" right="20.0" />
+                     </StackPane.margin></Button>
+               </children>
+            </StackPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

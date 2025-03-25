@@ -1,0 +1,68 @@
+@font-face {
+        font-family: 'PoppinsBlack';
+        src: url('../fonts/Poppins-Black.ttf');
+}
+@font-face {
+        font-family: 'Geomanist';
+        src: url('../fonts/Geomanist-Regular.otf');
+}
+.header {
+        -fx-background-color: black;
+}
+.nameLabel{
+}
+
+.logoName{
+        -fx-font-family: PoppinsBlack;
+}
+
+.label{
+        -fx-text-fill: white;
+}
+
+.sideBar {
+        -fx-background-color: black;
+}
+.sidebar:hover{
+
+}
+.sideBarBtn{
+        -fx-background-color: transparent;
+}
+
+.sideBarBtn:hover{
+        -fx-background-color: #272727;
+        -fx-border-color: WHITE;
+        -fx-border-width: 0px 0px 0px 3px;
+}
+
+.progressBar{
+        -fx-accent: #1188FF;
+}
+
+.searchBar {
+        -fx-background-color: #333333;
+        -fx-text-fill: white;
+}
+
+.searchBar .prompt-text{
+        -fx-text-fill: white;
+}
+
+
+.contentView{
+        -fx-background-color: #888888;
+}
+
+.addBtn{
+        -fx-background-color: #1188FF;
+        -fx-transition: background-color 0.3s ease-in-out;
+}
+
+
+.addBtn:hover {
+        -fx-background-color: linear-gradient(to right, #1188FF, #66aaff);
+}
+.button:hover {
+        -fx-cursor: hand;
+}

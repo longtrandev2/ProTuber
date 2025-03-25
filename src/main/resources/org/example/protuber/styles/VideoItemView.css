@@ -1,0 +1,63 @@
+
+.videoItem {
+    -fx-background-color: #202020;
+    -fx-padding: 8px;
+    -fx-border-color: #383838;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+
+#titleLabel {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+
+#tagContainer {
+    -fx-padding: 5px;
+}
+
+
+#tagLabel {
+    -fx-text-fill: #bbbbbb;
+    -fx-font-size: 13px;
+}
+
+.button {
+    -fx-background-color: #303030;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-background-radius: 4px;
+    -fx-padding: 5px 10px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #444444;
+}
+
+#playButtonItem {
+    -fx-background-color: #3a5a9a
+}
+
+#playButtonItem:hover {
+    -fx-background-color: #4a6cb3;
+}
+
+#editButton {
+    -fx-background-color: #ffa500;
+}
+
+#editButton:hover {
+    -fx-background-color: #ffb833;
+}
+
+#removeButton {
+    -fx-background-color: #d9534f;
+}
+
+#removeButton:hover {
+    -fx-background-color: #e57373;
+}

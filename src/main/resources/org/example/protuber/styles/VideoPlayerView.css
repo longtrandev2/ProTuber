@@ -1,0 +1,82 @@
+/*.root{*/
+/*    !*-fx-background-color: *!*/
+/*}*/
+/*.playVideoPlayer .resetButton .volumeButton .fullscreenButton{*/
+/*    -fx-background-color: transparent;*/
+/*}*/
+#videoControls {
+    -fx-background-color: rgba(0, 0, 0, 0.7);
+    -fx-transition: opacity 0.3s ease-in-out;
+}
+
+#progressBarVideo .track {
+    -fx-background-color: #aaaaaa;
+    -fx-background-radius: 2px;
+    -fx-pref-height: 5px;
+}
+
+#progressBarVideo .fill {
+    -fx-background-color: red;
+    -fx-background-insets: 0;
+    -fx-background-radius: 5px;
+    -fx-pref-height: 5px;
+}
+
+/*#progressBarVideo .thumb {*/
+/*    -fx-background-color: transparent;*/
+/*    -fx-padding: 0px;*/
+/*    -fx-shape: " ";*/
+/*}*/
+
+    .timestamp-label {
+        -fx-font-size: 14px;
+        -fx-font-weight: bold;
+        -fx-text-fill: #0073e6;
+        -fx-cursor: hand;
+    }
+
+    .timestamp-label:hover {
+        -fx-underline: true;
+    }
+    .note-label{
+        -fx-font-size: 14px;
+        -fx-text-fill: black;
+    }
+    .button {
+        -fx-background-color: #e0e0e0;
+        -fx-border-radius: 5px;
+    -fx-padding: 5px 10px;
+}
+
+.button:hover {
+    -fx-background-color: #d6d6d6;
+}
+.choice-box {
+    -fx-background-color: rgba(0, 0, 0, 0.7);
+    -fx-mark-color: black;
+    -fx-text-fill: white;
+}
+
+
+.choice-box:hover {
+    -fx-background-color: #272727;
+}
+
+
+.choice-box:pressed {
+    -fx-background-color: #1188FF;
+}
+
+
+.menu-item {
+    -fx-background-color: black;
+    -fx-text-fill: black;
+}
+
+.menu-item:focused {
+    -fx-background-color: #1188FF;
+    -fx-text-fill: black;
+}
+
+
+

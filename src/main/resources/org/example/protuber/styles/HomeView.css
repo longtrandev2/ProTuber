@@ -1,0 +1,45 @@
+
+.root {
+    -fx-background-color: #181818;
+}
+
+.homeView {
+    -fx-background-color: #181818;
+    -fx-padding: 10px;
+}
+
+.hbox {
+    -fx-background-color: #282828;
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+}
+
+
+.label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+#videoListVBox {
+    -fx-spacing: 10px;
+    -fx-padding: 10px;
+}
+
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: #282828;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #505050;
+}

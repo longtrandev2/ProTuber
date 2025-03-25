@@ -1,0 +1,20 @@
+.table-view {
+    -fx-background-color: #f8f8f8;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 5px;
+}
+
+.table-column {
+    -fx-alignment: CENTER-LEFT;
+}
+
+.table-row-cell:filled:hover {
+    -fx-background-color: #e6f7ff;
+}
+.table-view .column-header-background .label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-color: #4CAF50;
+    -fx-padding: 5px;
+}
